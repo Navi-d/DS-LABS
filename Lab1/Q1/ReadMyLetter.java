@@ -8,7 +8,7 @@ public static void main(String[] args) {
     System.out.println("Reading File from Java code");
 
 
-String fileName="Navid_S1234567.txt"; 
+String fileName="Lab1/Q1/Navid_S1234567.txt"; 
 try{
     //Create object of FileReader
     FileReader inputFile = new FileReader(fileName);
