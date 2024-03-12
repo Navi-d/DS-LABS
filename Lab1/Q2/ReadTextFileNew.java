@@ -4,8 +4,8 @@ import java.io.FileReader;
 import java.util.StringTokenizer;
 public class ReadTextFileNew {
     public static void main(String[] args) {
-        String[] fileNameArray = {"text1.txt", "text2.txt", "text3.txt",
-        "text4.txt"};
+        String[] fileNameArray = {"Lab1/Q2/text1.txt", "Lab1/Q2/text2.txt", "Lab1/Q2/text3.txt",
+        "Lab1/Q2/text4.txt"};
        
         String[] delimiterArray = {",", ", ", "; ", "\\d+"};
         for (int i = 0; i < fileNameArray.length; i++){

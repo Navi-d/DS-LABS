@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 public class ReadText1File {
     
     public static void main(String[] args) {
-        String fileName="text1.txt";
+        String fileName="Lab1/Q2/text1.txt";
         System.out.println("Reading File from text file : " + fileName + "\n");
         try{
             //Create object of FileReader
