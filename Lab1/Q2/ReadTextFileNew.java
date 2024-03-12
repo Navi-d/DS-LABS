@@ -29,7 +29,7 @@ public class ReadTextFileNew {
                 splitApproach(line, delimiterArray[i]);
                 counter++;
             }
-            bufferReader.close();//Close the buffer reader
+            bufferReader.close();
             } catch(Exception e){
                 System.out.println("Error while reading file line by line:" +
                 e.getMessage());
