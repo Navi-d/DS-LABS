@@ -17,6 +17,7 @@ public class Account {
     public Account(int id, double balance) {
         this.id = id;
         this.balance = balance;
+        dateCreated = new Date();
     }
 
     public int getId() {
