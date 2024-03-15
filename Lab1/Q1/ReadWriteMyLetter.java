@@ -1,4 +1,4 @@
-package Lab1.Q1;
+package Q1;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -25,6 +25,7 @@ public class ReadWriteMyLetter {
             }
 
             bufferReader.close();
+
             Scanner scanner = new Scanner(System.in);
             System.out.println("\nEnter your additional content (Enter 'q' to stop):");
             
@@ -36,21 +37,31 @@ public class ReadWriteMyLetter {
                 output.write("\n" + strInput);
             }
             output.close();
-
-            System.out.println("\n\nAfter user input. String and content in text file.");
+            scanner.close();
             FileReader inputFileAfterAppend = new FileReader(fileName);
-            BufferedReader bufferReaderAfterAppend = new BufferedReader(inputFileAfterAppend);
-
-            String line2;
-
-            while ((line2 = bufferReaderAfterAppend.readLine()) != null) {
-                System.out.println(line2);
-            }
-
-            bufferReaderAfterAppend.close();
-
+            System.out.println("\n\nAfter user input. String and content in text file.");
+            readFile(inputFileAfterAppend);
+           
         } catch (IOException e) {
             System.out.println("Error while reading file line by line:" + e.getMessage());
         }
     }
+    public static void readFile(FileReader inputFile){
+        try {
+            BufferedReader bufferReader = new BufferedReader(inputFile);
+
+            String line;
+            System.out.println("Before user input. Content in text file only.");
+
+            while ((line = bufferReader.readLine()) != null) {
+                System.out.println(line);
+            }
+
+            bufferReader.close();
+        }catch (IOException e) {
+            System.out.println("Error while reading file line by line:" + e.getMessage());
+        }
+    }
+
+    
 }

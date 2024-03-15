@@ -1,7 +1,9 @@
-package Lab1.Q2;
+package Q2;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.StringTokenizer;
+
 public class ReadTextFileNew {
     public static void main(String[] args) {
         String[] fileNameArray = {"Lab1/Q2/text1.txt", "Lab1/Q2/text2.txt", "Lab1/Q2/text3.txt",
@@ -11,14 +13,14 @@ public class ReadTextFileNew {
         for (int i = 0; i < fileNameArray.length; i++){
             System.out.println("Reading File from text file : " + fileNameArray[i] + "\n");
             try{
-                //Create object of FileReader
+
                 FileReader inputFile = new FileReader(fileNameArray[i]);
-                //Instantiate the BufferedReader Class
+
                 BufferedReader bufferReader = new BufferedReader(inputFile);
-                //Variable to hold the one line data
+
                 String line;
                 int counter=0;
-                // Read file line by line and print on the console
+                
                 while ((line = bufferReader.readLine()) != null) {
                 System.out.println("Line " + (counter+1) + " is : " + line);
     
