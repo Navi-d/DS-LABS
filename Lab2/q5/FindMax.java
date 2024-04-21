@@ -1,4 +1,4 @@
-package dsl2;
+package Lab2.q5;
 
 /* @author Amaan Geelani Syed S2191704 */
 
