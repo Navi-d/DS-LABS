@@ -1,4 +1,4 @@
-package dsl2;
+package Lab2.q6;
 
 import java.util.Arrays;
 
